@@ -1,0 +1,22 @@
+{
+  "name": "website-scanner",
+  "version": "1.0.0",
+  "description": "A web application that scans a website and provides server information and IP address.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "cheerio": "^1.0.0",
+    "dns": "^0.2.2",
+    "express": "^4.17.1",
+    "ipinfo": "^1.5.1",
+    "is-reachable": "^5.2.1",
+    "nmap": "^1.1.0",
+    "whois": "^2.14.2",
+    "zonefile": "^0.0.5"
+  },
+  "author": "",
+  "license": "ISC"
+}
