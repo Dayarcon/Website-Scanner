@@ -31,6 +31,8 @@
                     <p>IP: ${data.ipAddress}</p>
                     <p>Response Time: ${data.responseTime}</p>
                     <p>HTTP Headers: <pre>${JSON.stringify(data.httpHeaders, null, 2)}</pre></p>
+                    <br />
+                    <hr />
                     <p>SSL Certificate:</p>
                     <ul>
                         <li>Issuer: ${JSON.stringify(data.sslCertificate.issuer)}</li>
@@ -38,6 +40,8 @@
                         <li>Valid To: ${data.sslCertificate.valid_to}</li>
                         <li>Subject: ${JSON.stringify(data.sslCertificate.subject)}</li>
                     </ul>
+                    <br />
+                    <hr />
                     <p>Website Accessibility: ${data.websiteAccessibility}</p>
                     <p>Geolocation:</p>
                     <ul>
@@ -45,10 +49,14 @@
                         <li>Region: ${data.geolocation.region}</li>
                         <li>City: ${data.geolocation.city}</li>
                     </ul>
-                    <p>Page Title: ${data.pageTitle}</p>
-                    <p>Meta Description: ${data.metaDescription}</p>
-                    <p>Links: <pre>${JSON.stringify(data.links, null, 2)}</pre></p>
-                    <p>Images: <pre>${JSON.stringify(data.images, null, 2)}</pre></p>
+                    <br />
+                    <hr />
+                    <p>Page Title: <br /> ${data.pageTitle}</p>
+                    <p>Character Count: ${data.pageTitle.length}</p>
+                    <p>Meta Description: <br />${data.metaDescription}</p>
+                    <p>Character Count: ${data.metaDescription.length}</p>
+                    <br />
+                    <hr />
                     <p>WHOIS Info:</p>
                     <ul>
                         <li>Domain Name: ${data.whoisInfo.domainName}</li>
@@ -57,7 +65,11 @@
                         <li>Expiry Date: ${data.whoisInfo.expiryDate}</li>
                         <li>Status: ${data.whoisInfo.status}</li>
                     </ul>
+                    <br />
+                    <hr />
                     <p>DNS Records: <pre>${JSON.stringify(data.dnsRecords, null, 2)}</pre></p>
+                    <br />
+                    <hr />
                     <p>Port Scan: <pre>${data.portScan}</pre></p>
                 `;
             } catch (error) {
